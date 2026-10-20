@@ -1,0 +1,94 @@
+:root {
+  --primary-color: black;
+  --secondary-color: #222;
+  --text-color: #434343;
+  --border-color: #ccc;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: 'inter';
+}
+body > * {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+header {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.flex-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-section img {
+  width: 30px;
+}
+
+.logo-section h1 {
+  font-size: 22px;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+nav a {
+  color: var(--text-color)
+}
+
+nav a :hover {
+  color: var(--border-color);
+}
+
+.btn {
+ border-radius: 20px;
+ padding: 0.4rem 0.8rem;
+ color: var(--primary-color);
+}
+
+.btn :hover {
+  color: var(--border-color);
+}
+
+.btn-primary {
+   background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary :hover {
+  color: var(--border-color);
+}
+
+.hero .container{
+  min-height: 80vh;
+}
+
+.here.info h5 {
+  color: var(--text-color);
+}
